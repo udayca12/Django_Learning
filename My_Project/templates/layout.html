@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+       
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav style="background-color: #d50000; padding: 10px;">
+        <ul style="list-style: none; display: flex; justify-content: space-around; margin: 0; padding: 0;">
+            <li><a href="/" style="text-decoration: none; color: white; font-weight: bold;">Home</a></li>
+            <li><a href="/team" style="text-decoration: none; color: white; font-weight: bold;">Team</a></li>
+            <li><a href="/schedule" style="text-decoration: none; color: white; font-weight: bold;">Schedule</a></li>
+            <li><a href="/news" style="text-decoration: none; color: white; font-weight: bold;">News</a></li>
+            <li><a href="/shop" style="text-decoration: none; color: white; font-weight: bold;">Shop</a></li>
+            <li><a href="/contact" style="text-decoration: none; color: white; font-weight: bold;">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+        
+    {% block content %}
+
+    {% endblock content %}
+
+</body>
+</html>

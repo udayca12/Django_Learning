@@ -1,12 +1,42 @@
+/* General Body Styling */
 body {
-    background-color: pink;
-    color: rebeccapurple;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background for bold RCB theme */
+    color: #fff; /* White text for contrast */
 }
+
+/* Header Styling */
 h1 {
     text-align: center;
-    color: darkmagenta;
+    color: #d50000; /* RCB Red for header */
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
-h2 {
-    text-align: center;
-    color: rebeccapurple;
+
+/* Ordered List Styling */
+ol {
+    margin: 20px auto;
+    padding: 0;
+    list-style-type: decimal;
+    width: 80%;
+    background-color: #1b1b1b; /* Darker shade for list background */
+    border: 2px solid #d50000; /* RCB Red border */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* List Items Styling */
+ol li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 5px 10px;
+    color: #ffffff; /* White text */
+    border-left: 5px solid #d50000; /* RCB Red border on the left */
+    background-color: #2b2b2b; /* Slightly lighter background */
+    border-radius: 4px;
+    transition: transform 0.2s, background-color 0.3s;
 }
