@@ -1,36 +1,68 @@
-body{
+/* General Styles */
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color: #121212 !important; /* Darker background for contrast */
     margin: 0;
     padding: 0;
-    color: white;
-}   
-h1{
+    color: white !important;
+}
+
+/* Heading Styling */
+h1 {
     text-align: center;
-    color: #d50000;
-    font-size: 2.5em;
+    color: #d50000; /* RCB Red */
+    font-size: 2.75em; /* Slightly larger heading for emphasis */
     margin: 20px 0;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    font-weight: bold; /* Bold for stronger visual hierarchy */
 }
+
+/* Ordered List (ol) Styling */
 ol {
-    margin: 20px auto;
-    padding: 0;
+    margin: 40px auto; /* Increased top and bottom margins for spacing */
+    padding: 20px;
     list-style-type: decimal;
-    width: 80%;
-    background-color: #1b1b1b; /* Darker shade for list background */
+    width: 75%; /* Slightly reduced width for better layout control */
+    background-color: #1b1b1b; /* Darker shade for contrast */
     border: 2px solid #d50000; /* RCB Red border */
-    border-radius: 9px;
-    padding: 30px;
+    border-radius: 12px; /* Rounded corners for a modern look */
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
-/* List Items Styling */
+
+/* List Items (li) Styling */
 ol li {
     font-size: 1.2em;
-    margin: 10px 0;
-    padding: 5px 10px;
+    margin: 12px 0; /* Increased space between list items */
+    padding: 12px 20px; /* Consistent padding for better balance */
     color: #ffffff; /* White text */
-    border-left: 5px solid #d50000; /* RCB Red border on the left */
+    border-left: 6px solid #d50000; /* Thicker RCB Red border */
     background-color: #2b2b2b; /* Slightly lighter background */
-    border-radius: 4px;
-    transition: transform 0.2s, background-color 0.3s;
+    border-radius: 6px; /* Rounded edges for list items */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for List Items */
+ol li:hover {
+    background-color: #333333; /* Darken on hover for better interactivity */
+    transform: translateX(5px); /* Slight right shift on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Reduce heading size for smaller screens */
+    h1 {
+        font-size: 2em;
+    }
+
+    ol {
+        width: 90%; /* Make list wider on mobile */
+        padding: 15px;
+    }
+
+    ol li {
+        font-size: 1.1em; /* Smaller font size for mobile */
+        padding: 10px 15px; /* Adjust padding for mobile */
+    }
 }

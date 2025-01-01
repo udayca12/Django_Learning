@@ -1,3 +1,4 @@
+{% load static tailwind_tags %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +11,9 @@
         {% endblock %}
     </title>
     <link rel="stylesheet" href="/static/style.css">
+    {% comment %} <link rel="stylesheet" href="{% static 'style.css?v=1.2' %}"> {% endcomment %}
+
+    {% tailwind_css %}
 </head>
 <body>
     <nav style="background-color: #d50000; padding: 10px;">
